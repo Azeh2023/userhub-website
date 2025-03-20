@@ -1,0 +1,302 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  
+  .login-page {
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .login-container h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    background: #3498db;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #2980b9;
+  }
+  
+  .login-container p {
+    margin-top: 1rem;
+  }
+  
+  /* Registration Page */
+  .register-page {
+    background: url('https://via.placeholder.com/1920x1080/aaa') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .register-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .register-container h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Common form styles for registration */
+  .register-container .form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .register-container .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .register-container .form-group input[type="text"],
+  .register-container .form-group input[type="email"],
+  .register-container .form-group input[type="password"],
+  .register-container .form-group input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Gender radio buttons styling */
+  .register-container .form-group input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .register-container p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  /* Homepage and Settings Common Styles */
+  .navbar {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+  
+  .navbar nav a {
+    color: #ecf0f1;
+    margin-left: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar nav a:hover {
+    color: #3498db;
+  }
+  
+  /* Homepage Layout */
+  .container {
+    display: flex;
+    min-height: calc(100vh - 140px); /* subtract navbar and footer height */
+  }
+  
+  .sidebar {
+    background: #34495e;
+    color: #ecf0f1;
+    width: 200px;
+    padding: 1rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #3498db;
+  }
+  
+  .dashboard {
+    flex: 1;
+    padding: 2rem;
+    background: #ecf0f1;
+  }
+  
+  /* Dashboard Cards */
+  .cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1;
+    min-width: 150px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Dashboard Charts */
+  .charts {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .chart {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .chart-placeholder {
+    background: #bdc3c7;
+    height: 150px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7f8c8d;
+  }
+  
+  /* Footer */
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Settings Page */
+  .settings-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .settings-options {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .settings-options h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+  }
+  
+  .settings-options ul {
+    list-style: none;
+  }
+  
+  .settings-options ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .settings-options ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+  }
+  
+  .settings-options ul li a:hover {
+    color: #3498db;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .sidebar {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .cards, .charts {
+      flex-direction: column;
+    }
+  }
